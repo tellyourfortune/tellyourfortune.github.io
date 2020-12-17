@@ -1,3 +1,27 @@
+.titleclass {
+    animation: fadein 3s;
+    -webkit-animation: fadein 3s;
+}
+
+.subtitleclass {
+    animation: fadein 7s;
+    -webkit-animation: fadein 7s;
+}
+
+#subtitleid{
+    color: rgb(220, 220, 220);
+    }
+
+@keyframes fadein{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-animation fadein{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 .u-section-1 {
   background-image: url("images/pexels-arnesh-yadram-1046209.jpg");
 }
