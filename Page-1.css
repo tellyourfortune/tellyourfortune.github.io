@@ -1,11 +1,11 @@
-.titleclass {
+.subtitleclass {
     animation: fadein 3s;
     -webkit-animation: fadein 3s;
 }
 
-.subtitleclass {
-    animation: fadein 7s;
-    -webkit-animation: fadein 7s;
+.titleclass {
+    animation: fadein ease-in 5s;
+    -webkit-animation: fadein ease-in 5s;
 }
 
 #subtitleid{
