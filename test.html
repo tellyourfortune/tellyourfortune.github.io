@@ -39,11 +39,11 @@
             </a>
           </div>
           <div class="u-custom-menu u-nav-container">
-            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="./index.html" style="padding: 10px;">首頁</a>
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="index.html" style="padding: 10px;">首頁</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="test.html" style="padding: 10px;">綜合測驗</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="./每日運勢\每日運勢.html" style="padding: 10px;">每日運勢</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="./專家二\expert2.html" style="padding: 10px;">專家貼文</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" style="padding: 10px;">關於我們</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-black u-text-hover-palette-2-base" href="" style="padding: 10px;">關於我們</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
@@ -52,9 +52,9 @@
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="index.html" style="padding: 10px 20px;">首頁</a>
 </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="test.html" style="padding: 10px 20px;">綜合測驗</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="每日運勢\每日運勢.html" style="padding: 10px 20px;">每日運勢</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="專家二\expert2.html" style="padding: 10px 20px;">專家貼文</a>
-</li><li class="u-nav-item"><a class="u-button-style u-nav-link" style="padding: 10px 20px;">關於我們</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./每日運勢\每日運勢.html" style="padding: 10px 20px;">每日運勢</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./專家二\expert2.html" style="padding: 10px 20px;">專家貼文</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="" style="padding: 10px 20px;">關於我們</a>
 </li></ul>
               </div>
             </div>
@@ -77,25 +77,59 @@
         <div class="u-form u-form-1">
           <form action="#" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-35 u-form-vertical u-inner-form" style="padding: 0;" source="custom" name="form" redirect="true">
             <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-1">
-              <label for="email-f18c" class="u-label u-label-1">姓名</label>
-              <input type="email" placeholder="" id="email-f18c" name="text" class="u-grey-5 u-input u-input-rectangle u-input-1" required="">
+              <label for="name" class="u-label u-label-1">姓名</label>
+              <input placeholder="請輸入你的姓名" type="text" id="name" name="name" class="u-grey-5 u-input u-input-rectangle u-input-1" required="required">
             </div>
             <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-2">
-              <label for="date-33f9" class="u-label u-label-2">生日</label>
-              <input type="date" placeholder="" id="date-33f9" name="date" class="u-grey-5 u-input u-input-rectangle u-input-2" required="">
+              <label for="birth" class="u-label u-label-2">生日</label>
+              <input type="date" id="birth" name="birth" class="u-grey-5 u-input u-input-rectangle u-input-2" required="required">
             </div>
             <div class="u-form-group u-form-partition-factor-3 u-form-group-3">
-              <label for="phone-e90c" class="u-label u-label-3">星座</label>
-              <input pattern="\+?\d{0,2}[\s\(\-]?([0-9]{3})[\s\)\-]?([\s\-]?)([0-9]{3})[\s\-]?([0-9]{2})[\s\-]?([0-9]{2})" placeholder="" id="phone-e90c" name="star" class="u-grey-5 u-input u-input-rectangle u-input-3" required="required" value="" type="text">
+              <label for="star" class="u-label u-label-3">星座</label>
+                <select id="star" name="star" class="u-grey-5 u-input u-input-rectangle u-input-3" required="required">
+                    <option value="" selected disabled hidden>請選擇你的星座</option>
+                    <option value="摩羯座">摩羯座</option>
+                    <option value="水瓶座">水瓶座</option>
+                    <option value="雙魚座">雙魚座</option>
+                    <option value="牡羊座">牡羊座</option>
+                    <option value="金牛座">金牛座</option>
+                    <option value="雙子座">雙子座</option>
+                    <option value="巨蟹座">巨蟹座</option>
+                    <option value="獅子座">獅子座</option>
+                    <option value="處女座">處女座</option>
+                    <option value="天秤座">天秤座</option>
+                    <option value="天蠍座">天蠍座</option>
+                    <option value="射手座">射手座</option>
+                </select>
             </div>
             <div class="u-form-group u-form-name u-form-partition-factor-3 u-form-group-4">
-              <label for="name-f18c" class="u-label u-label-4">生肖</label>
-              <input type="text" id="name-f18c" name="zodiac" class="u-grey-5 u-input u-input-rectangle u-input-4" required="">
-            </div>
+              <label for="zodiac" class="u-label u-label-4">生肖</label>
+              <select id="zodiac" name="zodiac" class="u-grey-5 u-input u-input-rectangle u-input-4" required="required">
+                  <option value="" selected disabled hidden>請選擇你的生肖</option>
+                  <option value="鼠">鼠</option>
+                  <option value="牛">牛</option>
+                  <option value="虎">虎</option>
+                  <option value="兔">兔</option>
+                  <option value="龍">龍</option>
+                  <option value="蛇">蛇</option>
+                  <option value="馬">馬</option>
+                  <option value="羊">羊</option>
+                  <option value="猴">猴</option>
+                  <option value="雞">雞</option>
+                  <option value="狗">狗</option>
+                  <option value="豬">豬</option>
+                </select>
+                  </div>
             <div class="u-form-group u-form-partition-factor-3 u-form-group-5">
-              <label for="message-1015" class="u-label u-label-5">血型</label>
-              <input rows="4" cols="50" id="message-1015" name="blood" class="u-grey-5 u-input u-input-rectangle u-input-5" required="required" type="text">
-            </div>
+              <label for="blood" class="u-label u-label-5">血型</label>
+              <select id="blood" name="blood" class="u-grey-5 u-input u-input-rectangle u-input-5" required="required">
+                <option value="" selected disabled hidden>請選擇你的血型</option>
+                <option value="A型">A型</option>
+                <option value="B型">B型</option>
+                <option value="O型">O型</option>
+                <option value="AB型">AB型</option>
+                </select>
+                  </div>
             <div class="u-align-center u-form-group u-form-submit u-form-group-6">
               <a href="#" class="u-btn u-btn-submit u-button-style u-custom-color-1 u-btn-1">送出</a>
               <input type="submit" value="submit" class="u-form-control-hidden">
