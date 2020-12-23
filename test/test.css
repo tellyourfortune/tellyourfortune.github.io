@@ -1,0 +1,225 @@
+.u-section-1 {
+  background-image: url("images/pexels-arnesh-yadram-10462091.jpg");
+  background-position: 100% 24.59%;
+  min-height: 500px;
+}
+
+.u-section-1 .u-group-1 {
+  min-height: 500px;
+}
+
+.u-section-1 .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  margin: 55px 855px 0 55px;
+}
+
+.u-section-1 .u-text-2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 22px 811px 0 65px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 {
+    min-height: 324px;
+  }
+
+  .u-section-1 .u-group-1 {
+    min-height: auto;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 710px;
+    margin-left: 0;
+    width: 330px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 676px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 {
+    min-height: 228px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 490px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 456px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 {
+    min-height: 149px;
+  }
+
+  .u-section-1 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 350px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 316px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 {
+    min-height: 61px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 150px;
+    font-size: 2.25rem;
+    width: 320px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-right: 116px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 502px;
+}
+
+.u-section-2 .u-text-1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin: 57px auto 0;
+}
+
+.u-section-2 .u-form-1 {
+  height: 454px;
+  width: 1080px;
+  margin: 74px auto 57px;
+}
+
+.u-section-2 .u-label-1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.u-section-2 .u-input-1 {
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.u-section-2 .u-input-2 {
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.u-section-2 .u-input-3 {
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-label-4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.u-section-2 .u-input-4 {
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-5 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.u-section-2 .u-input-5 {
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-btn-1 {
+  background-image: none;
+  border-style: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-form-1 {
+    width: 940px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-form-1 {
+    width: 720px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 878px;
+  }
+
+  .u-section-2 .u-form-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-form-1 {
+    width: 340px;
+  }
+
+  .u-section-2 .u-form-group-1 {
+    width: 100%;
+  }
+
+  .u-section-2 .u-form-group-2 {
+    width: 100%;
+  }
+
+  .u-section-2 .u-form-group-3 {
+    width: 100%;
+  }
+
+  .u-section-2 .u-form-group-4 {
+    width: 100%;
+  }
+
+  .u-section-2 .u-form-group-5 {
+    width: 100%;
+  }
+
+  .u-section-2 .u-form-group-6 {
+    width: 100%;
+  }
+}
