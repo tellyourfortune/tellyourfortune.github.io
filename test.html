@@ -78,11 +78,11 @@
           <form action="#" method="POST" class="u-clearfix u-form-custom-backend u-form-spacing-35 u-form-vertical u-inner-form" style="padding: 0;" source="custom" name="form" redirect="true">
             <div class="u-form-email u-form-group u-form-partition-factor-2 u-form-group-1">
               <label for="name" class="u-label u-label-1">姓名</label>
-              <input placeholder="請輸入你的姓名" type="text" id="name" name="name" class="u-grey-5 u-input u-input-rectangle u-input-1" required="required">
+              <input placeholder="請輸入你的姓名" type="text" id="name" name="name" class="u-grey-5 u-input u-input-rectangle u-input-1" required="required" value="" minlength="1" maxlength="20">
             </div>
             <div class="u-form-date u-form-group u-form-partition-factor-2 u-form-group-2">
               <label for="birth" class="u-label u-label-2">生日</label>
-              <input type="date" id="birth" name="birth" class="u-grey-5 u-input u-input-rectangle u-input-2" required="required">
+              <input placeholder="請輸入你的生日（例：01/01）" type="text" id="birth" name="birth" class="u-grey-5 u-input u-input-rectangle u-input-2" required="required" value="" pattern="[0-1][0-9]/[0-3][0-9]">
             </div>
             <div class="u-form-group u-form-partition-factor-3 u-form-group-3">
               <label for="star" class="u-label u-label-3">星座</label>
