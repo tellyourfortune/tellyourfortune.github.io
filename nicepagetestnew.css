@@ -31961,7 +31961,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: 24px -50px 0 auto;
+  margin: 24px -50px 33px auto;
 }
 
 .u-header .u-nav-1 {
@@ -31972,41 +31972,15 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-nav-2 {
   font-size: 1.25rem;
 }
-
-.u-header .u-text-1 {
-  letter-spacing: 0px;
-  background-image: none;
-  font-family: Allura;
-  font-size: 1.5rem;
-  margin: -27px 898px 33px 24px;
-}
 @media (max-width: 1199px) {
   .u-header .u-menu-1 {
     width: auto;
     margin-right: 0;
   }
+}
 
-  .u-header .u-text-1 {
-    font-weight: normal;
-    margin: -28px 687px 34px 94px;
-  }
-}
-@media (max-width: 991px) {
-  .u-header .u-text-1 {
-    margin-right: 502px;
-    margin-left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .u-header .u-text-1 {
-    margin-right: 322px;
-  }
-}
-@media (max-width: 575px) {
-  .u-header .u-text-1 {
-    margin-right: 122px;
-  }
-}
+
+
 .u-footer {
   background-image: none;
 }

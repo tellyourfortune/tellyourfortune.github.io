@@ -7,14 +7,13 @@
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     <title>綜合測驗結果</title>
-    <link rel="stylesheet" href="nicepage.css" media="screen">
-<link rel="stylesheet" href="Page-1.css" media="screen">
+    <link rel="stylesheet" href="nicepageresult.css" media="screen">
+<link rel="stylesheet" href="result.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.1.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    
-    
+      
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -27,7 +26,7 @@
     <link rel="canonical" href="index.html">
     <meta property="og:url" content="index.html">
   </head>
-  <body class="u-body"><header class="u-clearfix u-header u-header" id="sec-8ccb"><div class="u-clearfix u-sheet u-sheet-1">
+  <body onload="init();" class="u-body"><header class="u-clearfix u-header u-header" id="sec-8ccb"><div class="u-clearfix u-sheet u-sheet-1">
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
             <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
@@ -87,6 +86,16 @@
             <div class="box">
               <h5 class="four" ><strong>愛情</strong></h5>
               <p class="u-text u-text-grey-50 u-text-8">讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦</p>
+                 <script>
+    function init(){
+        var star = localStorage.getItem("star");
+        
+        if(star == "摩羯座")
+        document.write("你今年的桃花運不錯");
+        if(star == "水瓶座")
+          document.write("你今年的桃花運不好");
+    }
+    </script>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
