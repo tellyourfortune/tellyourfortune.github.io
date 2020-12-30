@@ -16,8 +16,14 @@
       
         <script type="text/javascript">
         function tosubmit(){
+            var name = document.getElementById("name").value;
             var star = document.getElementById("star").value;
+            var blood = document.getElementById("blood").value;
+            var zodiac = document.getElementById("zodiac").value;
+            localStorage.setItem("name", name);
             localStorage.setItem("star", star);
+            localStorage.setItem("blood", blood);
+            localStorage.setItem("zodiac", zodiac);
             return true;
         }
       </script>

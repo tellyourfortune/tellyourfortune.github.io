@@ -17,16 +17,38 @@
       
      <script>
     function init(){
+        var name = localStorage.getItem("name");
+        document.getElementById("displayname").innerHTML = name;
+        
         var star = localStorage.getItem("star");
+        var displaybu = document.getElementById("displaybu");
         var display = document.getElementById("display");
         
-        if(star == "摩羯座") {
-        display.innerHTML = "你今年的桃花運不錯";}
-        else if(star == "水瓶座") {
-          display.innerHTML = "你今年的桃花運不好";}
-        else {
-            display.innerHTML = "no";
-        }
+        if (star == "摩羯座") {
+            displaybu.innerHTML = "在校內考試的時候容易粗心大意，進而影響到自己的成績，考試時要多加留意，不要犯了一些令自己懊悔不已的錯誤。在大考及證照考方面，考前應該要多多努力用心，才能夠發揮自己百分之百的實力。<br><br>在2021年有接觸新工作領域的機會，年中後需要打破常規、改頭換面去突破自己，不要因為固執及不願改變導致自己沒有進步空間。另外，這一年需要忍受老闆的無理要求，但與其因為這樣不快樂，不如改變自己的心態去欣然接受！</br></br>";
+        } else if (star == "水瓶座") {
+            displaybu.innerHTML = "你的頭腦靈光、學習力良好，校內考試只要多多努力就會有不錯的成績，在大考及證照考方面表現也十分穩定，能夠拿到自己滿意的成績。但要特別小心的是在五月中旬到七月之間，容易因為壓力過大導致焦慮不安、情緒陷入低潮，進而影響到自己的考試表現；建議別給自己太多壓力，放鬆身心的表現會更好。<br><br>2021年要鼓起勇氣接受新挑戰及任務，可以帶給你意想不到的好收獲。如果在求職，也能夠嘗試做做看新領域的工作，或許可以開拓一番新成就。下半年要注意與同事及客人的溝通技巧，把握得越好，就越多貴人去幫你。</br></br>";
+        } else if (star == "雙魚座") {
+            displaybu.innerHTML = "2021年整體在大考、證照考試方面表現大致中等，每月考運方面則會有短期的起伏波動。例如在校內考試時有可能發生小意外導致你表現失常，然而你的學習利是很不錯的，只要冷靜下來不要太過緊張就能迎刃而解。另外這一年中也不建議你熬夜唸書，保持良好的生活作息，會讓你有更好的表現。<br><br>今年你會覺得自己在公司不被重用，這是因為之前的自己沒有盡力創造佳績，因此與其怨天尤人，不如不斷改進自己的缺點。另外，很多事情也不要只停留在想像的階段，要用行動證明及爭取想要的成果。特別要注意的是不要向同事透露太多秘密，否則有很大的機會會被出賣。</br></br>";
+        } else if (star == "牡羊座") {
+            displaybu.innerHTML = "今年你的學習力相當不錯，在考試時皆能有很好的表現，獲得不錯的成績；然而也要特別小心不要因為自信過了頭而在考試時有所懈怠，可能會因此影響到你原本應該要有的實力喔！<br><br>這一年人際關係會直接影響自己的工作運甚至晉升機會，如果能夠與其他人好好合作，一定會事半功倍。如果正在找工作，也需要人脈網絡去幫助自己，否則會花更多時間來達成目標；想做生意的話，要小心與生意伙伴有爭執，切記凡事以和為貴，不可因為自己的一意孤行，令很多事情弄巧反拙。年中後會出現更多貴人相助，成為自己事業的重要推手。</br></br>";
+        } else if (star == "金牛座") {
+            displaybu.innerHTML = "大考和證照考的考運集中在六月下旬到九月，不妨趁著這個機會多多把握，能夠有很不錯的成績；若2021年有實驗或是報告，也將會按照你的計畫順利完成。<br><br>2021年要改變傳統的經營模式去經營自己的事業及生意，更要不斷注入新元素，否則很容易被市場淘汰。如果你正在打工，下半年後有機會升職加薪；至於做生意的話，下半年也能有不錯的收穫。然而需要注意的是，今年會比往年遇到更多工作上的挑戰；但克服挑戰後，你將會得到前所未有的好收穫。另外，有時間可增值自己，令他人更欣賞自己的專業。</br></br>";
+        } else if (star == "雙子座") {
+            displaybu.innerHTML = "這一年的學習能力強能夠舉一反三，在考試方面也都會有不錯的表現。但是在大考及證照考方面要特別注意，在八月到十月之間容易恍神粗心，記得打起精神細心應考；考試前也要多注意自己的身體狀況，把狀態調整到最好。若2021年有正在進行的實驗或是報告，整體而言進度和完成度會比預期中的更好。<br><br>今年你在工作上會有所轉變，可能是被調職或轉工；但一切的轉變也需要堅持，千萬不要因為三分鐘熱度進而影響工作。至於在人緣方面，這一年會多了工作上的朋友及合作夥伴，但也同時會遭小人妒忌。</br></br>";
+        } else if (star == "巨蟹座") {
+            displaybu.innerHTML = "2021年參與學術或體育競賽都可以有很好的表現，拿到很不錯的名次。若這一年需要做實驗或是做田野調查，在過程中容易發生小意外或小事故，記得多多注意安全。<br><br>5月至9月的事業很順利，一切的煩惱自然地消失，但業績仍需要盡力去打拼。俗話說「有危就有機」，有些冒險的事也需要放膽去做，說不定能夠獲得不錯的成果喔！這一年有貴人相助，令你工作上的壓力終於有他人分擔，記得隨時保持樂觀的態度，才能有效增加工作的效益。如果你正在求職，5月至7月是求職的好時機，一旦你換了工作領域，這些新認識的人，也能帶給你工作上的幫助。</br></br>";
+        } else if (star == "獅子座") {
+            displaybu.innerHTML = "這一年的學業表現四平八穩，大考方面也表現良好，如果要進行口試或是撰寫論文的話，2021年是很合適的一年，記得多多把握喔！<br><br>如果今年你想求職，上半年會比下半年容易得多。這一年需要投放時間去經營人際關係，藉此讓許多事情能得到貴人的幫助。如果是做生意的，不妨與一些有實力的人成為生意伙伴，這些人會在多方面讓你的生意愈做愈好。然而同時也需要注意自己的脾氣，否則會容易與他人起爭執。</br></br>";
+        } else if (star == "處女座") {
+            displaybu.innerHTML = "2021年的學業能力中等，考運方面則是起起伏伏，但是在學藝競賽、藝術美術、歌曲創作等等比賽中容易有良好的表現。大考方面要多多注意自己的身體狀況，才能發揮出自己的實力。<br><br>2021年有升職機會，之前的努力終於有所收成，年中會有一個不錯的轉捩點，要好好把握。但這一年的工作量會很大，壓力也隨之增加，所以應該多做一些自己喜歡的事情來減壓，在工作跟休閒之間尋求平衡。另外，凡事不要對自己有過度的要求，過度的自我要求只會無形地增加工作壓力及影響工作表現。</br></br>";
+        } else if (star == "天秤座") {
+            displaybu.innerHTML = "全年學業能力都不錯，然而在大考方面容易因為粗心而犯錯，考試時記得要更加謹慎小心。若你正就讀研究所並計畫今年要完成論文或取得學位的話，能夠按照計畫如期完成。<br><br>2021年你可以藉由拍短片或開直播來宣傳自己及生意；今年人緣也特別好，容易使他人對自己更信服。另外在工作上需要不斷做一些富有創意的突破，以達到事半功倍的成果。</br></br>";
+        } else if (star == "天蠍座") {
+            displaybu.innerHTML = "2021年是你學業表現良好的一年，七月到九月之間更是你大考運最好的時候，只要發揮自己的實力，相信你一定能在眾人之中拔得頭籌，獲得絕佳的成績！<br><br>這一年有機會移居其他國家工作，又或者從兼職躍升成為老闆。你越是專業就對你今年的事業越有幫助，可以開始增值自己，為你的事業創造出更好的成績及名聲。</br></br>";
+        } else if (star == "射手座") {
+            displaybu.innerHTML = "2021年的學業能力中等，需要多多努力勤能補拙；此外健康問題會影響你的學業表現，好好注意自己的身體況才能讓學業表現更好，上體育課或運動時也要小心安全避免受傷。<br><br>2021年的工作模式和工作環境有較大的變化，上半年有機會換新工作，雖然在一開始或許會感到壓力有點大，但隨著時間的適應會很快上手。另外要特別注意與同事及客人之間的關係，記得保持良好的溝通，否則容易樹敵。</br></br>";
+        } 
     }
     </script>
       
@@ -82,13 +104,13 @@
       <div class="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-xl u-sheet-1">
         <h1 class="u-text u-text-1">綜合測驗結果</h1>
         <div class="line"></div>
-        <h3 class="u-text u-text-2">嗨ＸＸＸ！以下是你的綜合測驗結果：</h3>
+          <h3 class="u-text u-text-2">嗨</h3><h3 id="displayname" class="u-text u-text-2"></h3><h3 class="u-text u-text-2">!以下是你的綜合測驗結果：</h3>
         <div class="u-expanded-width-xs u-palette-2-base u-shape u-shape-rectangle u-shape-1"></div>
         <div class="u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xl u-list u-repeater u-list-1">
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-white u-list-item-1">
             <div class="box">
               <h5 class="four"><strong>事業/學業</strong></h5>
-              <p class="u-text u-text-grey-50 u-text-4">讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦</p>
+              <p id="displaybu" class="u-text u-text-grey-50 u-text-4"></p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-2">
@@ -101,7 +123,7 @@
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
             <div class="box">
               <h5 class="four" ><strong>愛情</strong></h5>
-               <p id="display" class="u-text u-text-grey-50 u-text-8 love"></p>
+               <p id="display" class="u-text u-text-grey-50 u-text-8"></p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
