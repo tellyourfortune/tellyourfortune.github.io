@@ -11,17 +11,22 @@
 <link rel="stylesheet" href="result.css" media="screen">
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="result.js" defer=""></script>
     <meta name="generator" content="Nicepage 3.1.3, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
       
      <script>
     function init(){
         var star = localStorage.getItem("star");
+        var display = document.getElementById("display");
         
-        if(star == "摩羯座")
-        document.write("你今年的桃花運不錯");
-        if(star == "水瓶座")
-          document.write("你今年的桃花運不好");
+        if(star == "摩羯座") {
+        display.innerHTML = "你今年的桃花運不錯";}
+        else if(star == "水瓶座") {
+          display.innerHTML = "你今年的桃花運不好";}
+        else {
+            display.innerHTML = "no";
+        }
     }
     </script>
       
@@ -96,7 +101,7 @@
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
             <div class="box">
               <h5 class="four" ><strong>愛情</strong></h5>
-              <p class="u-text u-text-grey-50 u-text-8">讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦讚啦</p>
+               <p id="display" class="u-text u-text-grey-50 u-text-8 love"></p>
             </div>
           </div>
           <div class="u-align-center u-container-style u-list-item u-repeater-item u-video-cover u-white u-list-item-3">
