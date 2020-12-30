@@ -4,10 +4,6 @@
  * Copyright 2014-2020 Froala Labs
  */
 
-.allura {
- font-family: allura; 
-}
-
 .fr-clearfix::after {
   clear: both;
   display: block;
@@ -16249,7 +16245,7 @@ p {
   word-break: break-all;
 }
 .u-font-arial.u-custom-font {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif !important;
 }
 .u-font-courier-new.u-custom-font {
   font-family: 'Courier New', monospace !important;
