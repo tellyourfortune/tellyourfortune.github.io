@@ -4745,6 +4745,11 @@ a {
   display: table;
   white-space: nowrap;
 }
+
+.logoimage{
+  padding-top: 40px;
+    width: 20%;
+
 .u-image.u-logo img {
   display: block;
 }
